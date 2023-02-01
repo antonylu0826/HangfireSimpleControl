@@ -1,0 +1,141 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HangfireTest/1.0.0": {
+        "dependencies": {
+          "Hangfire.AspNetCore": "1.7.33",
+          "Hangfire.Core": "1.7.33",
+          "Hangfire.InMemory": "0.3.5"
+        },
+        "runtime": {
+          "HangfireTest.dll": {}
+        }
+      },
+      "Hangfire.AspNetCore/1.7.33": {
+        "dependencies": {
+          "Hangfire.Core": "1.7.33"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
+            "assemblyVersion": "1.7.33.0",
+            "fileVersion": "1.7.33.0"
+          }
+        }
+      },
+      "Hangfire.Core/1.7.33": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.Core.dll": {
+            "assemblyVersion": "1.7.33.0",
+            "fileVersion": "1.7.33.0"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ca/Hangfire.Core.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/netstandard2.0/de/Hangfire.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Hangfire.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fa/Hangfire.Core.resources.dll": {
+            "locale": "fa"
+          },
+          "lib/netstandard2.0/fr/Hangfire.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/nb/Hangfire.Core.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/netstandard2.0/nl/Hangfire.Core.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/netstandard2.0/pt-BR/Hangfire.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-PT/Hangfire.Core.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/netstandard2.0/pt/Hangfire.Core.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/netstandard2.0/sv/Hangfire.Core.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/netstandard2.0/tr-TR/Hangfire.Core.resources.dll": {
+            "locale": "tr-TR"
+          },
+          "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
+            "locale": "zh"
+          }
+        }
+      },
+      "Hangfire.InMemory/0.3.5": {
+        "dependencies": {
+          "Hangfire.Core": "1.7.33"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.InMemory.dll": {
+            "assemblyVersion": "0.3.5.0",
+            "fileVersion": "0.3.5.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.21818"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HangfireTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hangfire.AspNetCore/1.7.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2JC46KBEFBPvgDm3TitTSWSbWeM2kyOo6zgwmy2QvZ73E3aoB+UuWEozSs0TFV6EMNNHZrmgpi3ew3fg8kuheQ==",
+      "path": "hangfire.aspnetcore/1.7.33",
+      "hashPath": "hangfire.aspnetcore.1.7.33.nupkg.sha512"
+    },
+    "Hangfire.Core/1.7.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t12MTpyZXjxQhim4D1A8xksBVgzQfDJzGr0LpmDRYcvhZJWZIGFiaMW0TBOOy//aIoNkaN72OR/pTVVwySQdzA==",
+      "path": "hangfire.core/1.7.33",
+      "hashPath": "hangfire.core.1.7.33.nupkg.sha512"
+    },
+    "Hangfire.InMemory/0.3.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YTwBT+4xLv9Nn0o01kESyuEs8cfdG9m3Kjp5uuUKJ1VzLEGzibZsCrt93oGLN16zqYJHz/h1lJAaptMZbyxC7A==",
+      "path": "hangfire.inmemory/0.3.5",
+      "hashPath": "hangfire.inmemory.0.3.5.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
+      "path": "newtonsoft.json/11.0.1",
+      "hashPath": "newtonsoft.json.11.0.1.nupkg.sha512"
+    }
+  }
+}

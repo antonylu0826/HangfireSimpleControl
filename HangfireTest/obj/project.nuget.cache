@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "jgbzh0KraJckYvCeY8+9G7v4rbH24n4WTxBqAmb5kDEGXy58i3KjjpJkBIWgHAhO7jjHa7fu0eWqXJL+tlo5ZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\anthony.MAXECHO\\Desktop\\HangfireSimpleControl\\HangfireTest\\HangfireTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anthony.MAXECHO\\.nuget\\packages\\hangfire.aspnetcore\\1.7.33\\hangfire.aspnetcore.1.7.33.nupkg.sha512",
+    "C:\\Users\\anthony.MAXECHO\\.nuget\\packages\\hangfire.core\\1.7.33\\hangfire.core.1.7.33.nupkg.sha512",
+    "C:\\Users\\anthony.MAXECHO\\.nuget\\packages\\hangfire.inmemory\\0.3.5\\hangfire.inmemory.0.3.5.nupkg.sha512",
+    "C:\\Users\\anthony.MAXECHO\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,89 @@
+﻿@page "/"
+@using Hangfire.Storage
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hangfire RecurringJob List</h1>
+
+@if (recurringJobs == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cron</th>
+                <th>Next Execution</th>
+                <th>Job.Type</th>
+                <th>Job.Method</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in recurringJobs)
+            {
+                <tr>
+                    <td>@job.Id</td>
+                    <td>@job.Cron</td>
+                    <td>@job.NextExecution</td>
+                    <td>@job.Job.Type.Name</td>
+                    <td>@job.Job.Method.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<p>
+    <label>
+        Job ID:
+        <input @bind="jobId" />
+    </label>
+</p>
+<p>
+    <label>
+        Cron:
+        <input @bind="cron" />
+    </label>
+</p>
+
+<button class="btn btn-primary" @onclick="AddOrUpdateJob">Add/Update</button>
+<button class="btn btn-primary" @onclick="RemoveJob">Remove</button>
+
+@code{
+
+    List<RecurringJobDto>? recurringJobs;
+    string jobId = "easyjob";
+    string cron = "* * * * *";
+
+    protected override Task OnInitializedAsync()
+    {
+        GetRecurringJobs();
+        return base.OnInitializedAsync();
+    }
+
+    private void GetRecurringJobs()
+    {
+        recurringJobs = JobStorage.Current.GetConnection().GetRecurringJobs();
+    }
+
+    private void AddOrUpdateJob()
+    {
+        var manager = new RecurringJobManager();
+        var methods = typeof(Console).GetMethods();
+        var method = typeof(Console).GetMethod("WriteLine", new[] { typeof(string) });
+        var job = new Hangfire.Common.Job(method, new object[] { "Hi!" });
+        manager.AddOrUpdate(jobId, job, cron);
+        GetRecurringJobs();
+    }
+
+    private void RemoveJob()
+    {
+        var manager = new RecurringJobManager();
+        manager.RemoveIfExists(jobId);
+        GetRecurringJobs();
+    }
+
+}
